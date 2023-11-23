@@ -6,12 +6,10 @@ type Page = {
   likes: number;
   accounts: string[];
   status: string;
-  details?: {};
+  details?: { [key: string]: Date };
 };
 
-let page1: Page;
-
-page1 = {
+let page1: Page = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -22,9 +20,7 @@ page1 = {
   },
 };
 
-let page2: Page;
-
-page2 = {
+let page2: Page = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
