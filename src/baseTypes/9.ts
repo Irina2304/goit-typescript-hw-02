@@ -6,7 +6,7 @@ type Page = {
   likes: number;
   accounts: string[];
   status: string;
-  details?: { [key: string]: Date };
+  details?: { createAt: Date; updateAt: Date };
 };
 
 let page1: Page = {
